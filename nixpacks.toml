@@ -1,0 +1,22 @@
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+# Build order: client first (server serves client/dist in prod)
+[phases.build]
+cmds = [
+  "npm run build --workspace=client",
+  "npm run build --workspace=server"
+]
+
+[start]
+cmd = "npm start"
+cmdDirs = ["./"]
+
+[variables]
+NODE_ENV = "production"
+
+# Set VITE_CONVEX_URL at deploy time (Railway/Render env)
+# Required for client build. Example: VITE_CONVEX_URL=https://xxx.convex.cloud

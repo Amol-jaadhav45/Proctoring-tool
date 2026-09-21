@@ -1,0 +1,9 @@
+node_modules/
+dist/
+recordings/
+*.log
+.env
+.env.local
+.env.*.local
+src/**/*.js
+src/**/*.js.map

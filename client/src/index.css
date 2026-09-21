@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #137fec;
+    --primary-dark: #0d6ed1;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --background: #f6f7f8;
+    --card: #ffffff;
+    --text: #1E293B;
+    --text-muted: #64748B;
+    --border: #E2E8F0;
+  }
+
+  .dark {
+    --background: #101922;
+    --card: #1a2632;
+    --text: #E2E8F0;
+    --text-muted: #94A3B8;
+    --border: #1f2937;
+  }
+
+  body {
+    font-family: 'Lexend', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    @apply antialiased;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  }
+
+  .glass {
+    background: rgba(255,255,255,0.7);
+    border: 1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  }
+
+  .btn-primary {
+    background: var(--primary);
+    color: white;
+    border-radius: 12px;
+    transition: transform 120ms ease, box-shadow 160ms ease, background 160ms ease;
+    box-shadow: 0 10px 24px rgba(11, 94, 215, 0.18);
+  }
+
+  .btn-primary:hover {
+    background: #0d4bb5;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(11, 94, 215, 0.22);
+  }
+}
