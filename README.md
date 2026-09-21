@@ -359,8 +359,4 @@ This project is licensed under the MIT License.
 
 ---
 
-<div align="center">
 
-**Built with ❤️ by [Ganesh Wagh](https://github.com/gan3shwagh)**
-
-</div>
