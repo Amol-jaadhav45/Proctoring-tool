@@ -97,7 +97,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/gan3shwagh/proctai.git
+git clone https://github.com/Amol-jaadhav45/proctai.git
 cd proctai
 ```
 
